@@ -69,11 +69,11 @@ where `dataset_path` is the path to the training dataset, `wikiart_path` is the 
 ## 4.4. Train with Initialization
 You can save the training time of the style transfer training stage by initializing the model with the trained model of another scene by:
 ```bash
-
-Many thanks to StylaGaussian.
 python train_artistic.py -s [dataset_path] --wikiartdir [wikiart_path] --ckpt_path [feature_ckpt_path] --style_weight [style_weight] --decoder_path [init_ckpt_path]
 
 # for example:
 python train_artistic.py -s datasets/train --wikiartdir datasets/wikiart --ckpt_path output/train/feature/default/chkpnt/feature.pth --style_weight 10 --decoder_path output/truck/artistic/default/chkpnt/gaussians.pth
 ```
 where `dataset_path` is the path to the training dataset, `wikiart_path` is the path to the WikiArt dataset, `feature_ckpt_path` is the path to the checkpoint of the feature embedding model, named as `output/[scene_name]/feature/[exp_name]/chkpnt/feature.pth`, `style_weight` is the weight for the style loss, and `init_ckpt_path` is the path to the checkpoint of the trained model of another scene, named as `output/[another_scene]/artistic/[exp_name]/chkpnt/gaussians.pth`. The trained style transfer model will be saved in the `output/[scene_name]/artistic/[exp_name]` folder.~
+
+Many thanks to StylaGaussian.
