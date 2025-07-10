@@ -1,0 +1,1 @@
+Namespace(data_device='cuda', eval=False, images='images', model_path='./output/Ignatius/artistic/default', resolution=-1, sh_degree=3, source_path='datasets/Ignatius', white_background=False)
