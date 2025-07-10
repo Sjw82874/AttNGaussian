@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/home/shenjiawei/StyleGaussian/datasets/train', model_path='./output/train/reconstruction/default', images='images', resolution=-1, white_background=False, data_device='cuda', eval=False)
