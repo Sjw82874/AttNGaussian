@@ -1,0 +1,19 @@
+name: attngaussian
+pip:
+  - plyfile=1.1
+  - python=3.9
+  - pip=24.3.1
+  - pytorch=2.3.0+cu121
+  - torchaudio=2.3.0+cu121
+  - torchvision=0.18.0+cu121
+  - tqdm
+  - pytorch-scatter
+  - submodules/diff-gaussian-rasterization
+  - submodules/feature-gaussian-rasterization
+  - submodules/simple-knn
+  - cupy-cuda12x
+  - six
+  - tensorboard
+  - viser
+  - scikit-learn
+  - fast_pytorch_kmeans
